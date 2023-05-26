@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Lato:wght@900&family=The+Nautigal:wght@700&family=Waterfall&display=swap');
+
+.card-wrapper{
+    height: 80vh;
+    width: 100vw;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: chillax;
+}
+.info-display-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+}
+.info-display{
+    position: relative;
+    background: #1A1A1A;
+    height: 70%;
+    width: 80%;
+    border-radius: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xx-large;
+}
+.info-display-text{
+    max-width: 30%;
+    
+    font-size: 56px;
+    background: -webkit-linear-gradient(rgb(77,164,255), #B275F7);
+    background-clip:border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.totalVaccinations{
+    height: 40%;
+    width: 20%;
+    background:#918ef3;
+    color: #272d2d;
+    border-radius: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.totalCases,.recoveredCases{
+    height: 40%;
+    width: 20%;
+    background: #A4A1FE;
+    color: #272d2d;
+    border-radius: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+.totalCasesText,.recoveredText{
+    margin-top: 15%;
+    font-size: 18px;
+    font-family: chillax;
+}
+
+.searchbar-main-wrapper{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    bottom:10%;
+}
+
+.searchbar{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background:#EAEBE5;
+    color: #fff;
+    height: 250px;
+    width: 70vw;
+    border-radius: 42px;
+ 
+    
+}
+.state,.district,.date{
+    transition-duration: 1s;
+color: #000;
+background: rgba(237, 242, 227, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.5px);
+-webkit-backdrop-filter: blur(4.5px);
+border: 1px solid rgba(255, 255, 255, 0.85);
+height: 60%;
+flex:1;
+margin: 10px 20px;
+font-weight: 500;
+font-size: 20px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.search-btn{
+
+    background: #8b87ef;
+    color: #272d2d;
+height:20%;
+width: 10%;
+border-radius: 24px;
+margin-right: 24px;
+font-weight: 600;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.search-btn:hover{
+    color:white;
+}
+
+/* .state:hover,.district:hover,.date:hover,.search-btn:hover{
+    transition-duration: 1s;
+    background: #191c1c;
+    color: #fff;
+    
+} */
+
+.state-select,.district-select,.date-picker{
+    width: 100%;
+    border: none;
+
+}
+
+
+
+.listing-wrapper{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listing{
+    color: #F4F4F4;
+    margin-top: 100px;
+    background:#1A1A1A;;
+    width: 99vw;
+    border-radius: 124px 124px 0 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.vaccination-center{
+    margin: 20px 0;
+    width: 80vw;
+    height: 100px;
+    color: #fff;
+    border-radius:48px;
+    border: solid;
+    border-color:#fff ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+.vaccination-center:hover{
+    transition-duration: 0.2s;
+    background:#F4F4F4;
+    color:#1a1a1a;
+    transform: scale(1.01);
+
+}
+.vaccination-center-name{
+    flex: 2;
+    padding-left: 100px;
+}
+.vaccination-center-slot{
+flex: 1;
+}
+.vaccination-center-book{
+flex: 0.5;
+}
+.vaccination-center-slot{
+
+    display: flex;
+    flex-direction:row;
+
+}
+
+.vaccination-center-book-text{
+    cursor: pointer;
+    background: -webkit-linear-gradient(rgb(77,164,255), #B275F7);
+    background-clip:border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vaccination-center-slot-number{
+    color: rgb(240,113,120);
+}
+
+.date-picker{
+    border-radius: 24px;
+}

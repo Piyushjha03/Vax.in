@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Lato:wght@900&family=Roboto+Slab:wght@100;300;500&family=The+Nautigal:wght@700&family=Waterfall&display=swap');
+.navbar-wrapper{
+    background: transparent;
+    width: 100vw;
+    height: 5vh;
+    margin-bottom: 20px;
+    color: #000;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-weight:300;
+    font-size:large;
+    font-family: chillax;
+}
+.logo,.account,.signOut{
+    text-decoration: none;
+    color: #000;
+}
+.logo:hover,.account:hover,.signOut:hover{
+    text-decoration: underline;
+    color: #6762f4;
+}

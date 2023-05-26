@@ -1,0 +1,114 @@
+.account-wrapper{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+}
+
+.update-page{
+    height: 90vh;
+    width:30vw;
+    background:#968eea;
+    border-radius: 24px;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.update-page-form{
+    height: 100%;
+      width: 100%;
+      padding-top: 10%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.update-text{
+    font-family: CHILLAX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    height: 6%;
+    width: 40%;
+    top: 0;
+    left: 28%;
+    background: #fff;
+    color: #968eea;
+    border-radius: 0 0 20px 20px;
+  }
+  .update-bttn{
+    background-color:#251e68 ;
+    color: #fff;
+    height: 40px;
+    border:3px;
+    padding: 5px 30px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    font-family: chillax;
+    font-size: larger;
+      cursor: pointer;
+  }
+
+  .slot-details-wrapper{
+    height: 90vh;
+    width: 50vw;
+    background: #000;
+    background:#968eea;
+    border-radius: 24px;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .slot-detail-text{
+    font-family: CHILLAX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    height: 6%;
+    width: 40%;
+    top: 0;
+    left: 28%;
+    background: #fff;
+    color: #968eea;
+    border-radius: 0 0 20px 20px;
+  }
+  .slot-details-display{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  .slot-details-center_address,  .slot-details-uhid,.slot-details-userName,.slot-details-phNumber,.slot-details-dob,.slot-details-vaccination_status,.slot-details-address,.slot-details-aadhar_number,.slot-details-centre_name,.slot-details-state,.slot-details-district,.slot-details-centre_type,.slot-details-vaccine_type,.slot-details-time_of_slot{
+    width: 300px;
+    height: 60px;
+    background: #74c3ed;
+    margin: 30px;
+    border-radius: 8px;
+  background: #B7C6FD;
+  color: #140E57;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: chillax;
+  }
+
+  .login-first{
+    height: 60px;
+    background: #74c3ed;
+    margin: 30px;
+    border-radius: 8px;
+  background: #B7C6FD;
+  color: #140E57;
+  display: flex;
+  justify-content: center;align-items: center;
+  font-family: chillax;
+  font-size: larger;
+  }

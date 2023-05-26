@@ -1,0 +1,212 @@
+*:focus{
+    outline: none;
+}
+
+.entry-wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family:chillax;
+ }
+.entry-right{
+      display: flex;
+      height: 100vh;
+      width: 50%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+.entry-left{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width:50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.entry-text{
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    z-index: 3;
+    font-weight: 300;
+    font-size: 84px;
+    color:#140E57;
+    font-family:rockwell;
+
+}
+
+
+.entry-img{
+  border-radius: 40% 40% 0 0;
+      height: 40rem;
+      width: 35rem;
+      z-index: 2;
+     object-fit: cover;
+
+}
+
+    
+    .login-page{
+      
+      background-color: #90A0FE;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 33em;
+      width: 350px;
+      border: 5px;
+      border-radius: 16px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      
+    }
+    .register-page{
+      background-color:#90A0FE;;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:space-around;
+      position: absolute;
+      height:90vh;
+      width: 440px;
+      border: 5px;
+      border-radius: 16px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .login-page-form,.register-page-form{
+      height: 100%;
+      width: 100%;
+      padding-top: 10%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .login-text,.register-text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position:absolute;
+      height: 8%;
+      width: 50%;
+      top: 0;
+      background: #fff;
+      color: #5A69E2;
+      border-radius: 0 0 20px 20px;
+    }
+
+         
+.LoginuserId,.Loginpassword{
+  height: 40px;
+  width: 200px;
+  margin-bottom: 30px;
+  padding-left: 10%;
+  border:4px;
+  border-radius: 4px;
+  background: #B7C6FD;
+  color: #140E57;
+  
+}
+ .Loginpassword::placeholder,.LoginuserId::placeholder{
+    color: #140E57;
+    font-family:chillax ;
+} 
+
+.firstName,.lastName,.phnumber,.address,.aadhar_number,.gender,.password{
+  height: 40px;
+  width: 250px;
+  padding-left: 10%;
+  border:4px;
+  border-radius: 4px;
+  background: #B7C6FD;
+  color: #140E57;
+}
+.firstName::placeholder,.lastName::placeholder,.phnumber::placeholder,.address::placeholder,.aadhar_number::placeholder,.gender::placeholder,.password::placeholder{
+  color: #140E57;
+  font-family:chillax ;
+}
+.picker-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 250px;
+}
+.picker-input__text {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #B7C6FD;
+  color: #140E57;
+  font-family: chillax;
+  font-size:14px ;
+border: none;
+
+}
+.picker-input__text::placeholder{
+  color: #140E57;
+  position: relative;
+  left: 10%;
+}
+
+
+.firstName,.lastName,.phnumber,.address,.aadhar_number,.gender,.password{
+  color: #140E57;
+  font-family:chillax ;
+}
+  
+.login-bttn,.create-bttn{
+  background-color:#140E57 ;
+  color: #fff;
+  height: 40px;
+  border:3px;
+  padding: 5px 30px;
+  margin-bottom: 10px;
+  border-radius: 40px;
+  font-family: chillax;
+  font-size: larger;
+    cursor: pointer;
+}
+    
+.register-bttn{
+      background-color:#fff ;
+      color: #5A68E2;
+      height: 40px;
+      width: 150px;
+      border:3px;
+      margin-top: 10px;
+      margin-bottom: 20%;
+      border-radius: 40px;
+      font-family: chillax;
+      cursor: pointer;
+    }
+
+
+    @media (max-width: 1030px) {
+      .entry-img{
+        height: 30rem;
+        width: 30rem;
+      }
+    }
+
+
+    @media (max-width: 900px) {
+      .entry-img{
+        display: none;
+      }
+      .entry-left{
+        width: 0;
+      }
+      .entry-right{
+        width: 100vh;
+      }
+     .login-page{
+
+     }
+    }
