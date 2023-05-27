@@ -28,7 +28,7 @@ export const Account=()=>{
     useEffect(() => {
         if(currentUser!=null){
             console.log(currentUser);
-            axios.post('http://localhost:8800/account',{uh_id})
+            axios.post('https://vaxin-api.vercel.app/account',{uh_id})
             .then((res)=>{
                setResponse(res.data[0]);     
            }) 
@@ -42,7 +42,7 @@ export const Account=()=>{
     
     useEffect(()=>{
         if(response!=null){
-            axios.post('http://localhost:8800/account2',response)
+            axios.post('https://vaxin-api.vercel.app/account2',response)
             .then((res)=>{setResponse2(res.data[0])})
             .catch(error => {
                 console.error('Error fetching COVID-19 data:', error);
@@ -64,10 +64,10 @@ const handleClick=async(e)=>{
     e.preventDefault();
     try {
         
-        await axios.post('http://localhost:8800/update',userDetails)
+        await axios.post('https://vaxin-api.vercel.app/update',userDetails)
         .then( async()=>{
             try {
-                 await axios.post("http://localhost:8800/login",{userId:userDetails.aadhar_number,password:userDetails.password})
+                 await axios.post("https://vaxin-api.vercel.app/login",{userId:userDetails.aadhar_number,password:userDetails.password})
                  .then((response) => {
                  setCurrentUser(response.data)
                 })

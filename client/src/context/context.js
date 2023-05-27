@@ -10,7 +10,7 @@ export const UserContext=createContext();
     const [currentUser,setCurrentUser]=useState(null);
 
     const loginmethod=async(e)=>{
-       await axios.post("http://localhost:8800/login",e).then((response) => {
+       await axios.post("https://vaxin-api.vercel.app/login",e).then((response) => {
         console.log("response:",response);
         setCurrentUser(response.data)
         if(response.data.length>0){

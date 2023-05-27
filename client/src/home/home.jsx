@@ -95,7 +95,7 @@ export const Home=()=>{
 
     const handleSubmit=async()=>{
       try {
-        await axios.post("http://localhost:8800/",
+        await axios.post("https://vaxin-api.vercel.app/",
         {
           selectedState:selectedState,
           selectedDistrict:selectedDistrict

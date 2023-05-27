@@ -32,7 +32,7 @@ export const Camp=()=>{
     
    const handleSubmit=async()=>{
     try {
-        await axios.post("http://localhost:8800/camp",slotDetails).then(
+        await axios.post("https://vaxin-api.vercel.app/camp",slotDetails).then(
             ()=>{
                 navigation('/account')
             }

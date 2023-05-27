@@ -28,7 +28,7 @@ export const Register=(props)=>{
 const handleClick=async(e)=>{
     e.preventDefault();
     try {
-        await axios.post("http://localhost:8800/register",userDetails);
+        await axios.post("https://vaxin-api.vercel.app/register",userDetails);
     } catch (error) {
         console.log(error);
     }
