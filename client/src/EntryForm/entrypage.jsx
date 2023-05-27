@@ -1,4 +1,4 @@
-import main from '/Users/piyushjha/covid_vaccination/client/src/images/main_img.jpg'
+import main from '../images/main_img.jpg'
 import '../App.js';
 import './entrypage.css'
 import { Login } from './login';
