@@ -16,10 +16,10 @@ app.use((req, res, next) => {
   })
 
 const db=mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"mysql@dbms",
-    database:"dbms",
+    host:"bp6aanxbenfnmv7lwtwg-mysql.services.clever-cloud.com",
+    user:"ulbct18t49ghznva",
+    password:"dMa4nRpIXKI62RsIDJGf",
+    database:"bp6aanxbenfnmv7lwtwg",
     multipleStatements: true
 })
 
