@@ -4,7 +4,7 @@ import { Login } from "./login";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { DatePicker } from '@y0c/react-datepicker';
- import '@y0c/react-datepicker/assets/styles/calendar.scss';
+import '@y0c/react-datepicker/assets/styles/calendar.scss';
 export const Register=(props)=>{
 
 
