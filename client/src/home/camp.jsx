@@ -11,11 +11,9 @@ import {UserContext} from '../context/context';
 // eslint-disable-next-line import/no-webpack-loader-syntax
 // @ts-ignore 
 import mapboxgl from "!mapbox-gl";
-import ReactMapGL from "react-map-gl";
-import mapboxgl from "mapbox-gl"; // This is a dependency of react-map-gl even if you didn't explicitly install it
-
-// eslint-disable-next-line import/no-webpack-loader-syntax
-mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
+import mapboxgl from 'mapbox-gl/dist/mapbox-gl';
+import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
+mapboxgl.workerClass = MapboxWorker;
 const Token = 'pk.eyJ1IjoicGl5dXNoamhhIiwiYSI6ImNsZzl4MHZ3dDFidGkzZm85Nmdxa3B4cDAifQ.Jm2PEzVgGjD78Cl2-stBfA';
  
 export const Camp=()=>{
