@@ -11,6 +11,7 @@ import {UserContext} from '../context/context';
 // eslint-disable-next-line import/no-webpack-loader-syntax
 // @ts-ignore 
 import mapboxgl from "mapbox-gl";
+import 'mapbox-gl/dist/mapbox-gl.css';
 import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
 mapboxgl.workerClass = MapboxWorker.default;
 const Token = 'pk.eyJ1IjoicGl5dXNoamhhIiwiYSI6ImNsZzl4MHZ3dDFidGkzZm85Nmdxa3B4cDAifQ.Jm2PEzVgGjD78Cl2-stBfA';
