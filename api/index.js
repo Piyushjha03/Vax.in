@@ -171,6 +171,8 @@ const password=req.body.password;
     )
 })
 
+app.use('/test',(req,res)=>{res.json({message:"hello"})});
+
 app.listen(8800,()=>{
     console.log("connected");
 })
