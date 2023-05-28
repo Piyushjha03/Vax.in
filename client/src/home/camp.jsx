@@ -8,14 +8,11 @@ import { useContext } from 'react';
 import axios from 'axios';
 import {UserContext} from '../context/context';
 // import REACT_APP_MAPBOX from 'client/src/.env'
-import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from '!mapbox-gl';
 
 
 const Token = 'pk.eyJ1IjoicGl5dXNoamhhIiwiYSI6ImNsZzl4MHZ3dDFidGkzZm85Nmdxa3B4cDAifQ.Jm2PEzVgGjD78Cl2-stBfA';
  
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
-
 export const Camp=()=>{
     const location=useLocation()
     const navigation=useNavigate()
