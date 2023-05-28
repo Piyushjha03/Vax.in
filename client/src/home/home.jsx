@@ -130,6 +130,7 @@ export const Home=()=>{
                         <CountUp
                         end={totalCases}
                         duration={2}
+                        className='totalCasesNumber'
                         />
                         <div className="totalCasesText">Total Cases</div>
                     
@@ -137,6 +138,7 @@ export const Home=()=>{
                     <div className="recoveredCases"><CountUp
                         end={recoveredCases}
                         duration={2}
+                        className='recoveredCasesNumber'
                         />
                         <div className="recoveredText">Recovered Cases</div>
                     

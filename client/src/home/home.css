@@ -7,8 +7,10 @@
     display: flex;
     flex-direction: column;
     font-family: chillax;
+
 }
 .info-display-wrapper{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,9 +30,9 @@
     font-size: xx-large;
 }
 .info-display-text{
-    max-width: 30%;
-    
-    font-size: 56px;
+
+    max-width: 35%;
+    font-size: 4rem;
     background: -webkit-linear-gradient(rgb(77,164,255), #B275F7);
     background-clip:border-box;
     -webkit-background-clip: text;
@@ -162,8 +164,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-family: chillax;}
 .vaccination-center{
     margin: 20px 0;
     width: 80vw;
@@ -215,4 +216,204 @@ flex: 0.5;
 
 .date-picker{
     border-radius: 24px;
+}
+
+@media (max-width: 1200px) {
+   
+    .info-display{
+        width: 90%;
+    }
+    .info-display-text{
+
+        font-size: 3.5rem;
+
+    }
+}
+@media (max-width: 1040px) {
+    
+
+    .info-display{
+        width: 90%;
+    }
+    .info-display-text{
+
+        font-size: 3rem;
+
+    }
+
+    .totalCasesNumber,.recoveredCasesNumber{
+        
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .totalCasesText,.recoveredText{
+        margin-bottom: 10%;
+        font-size: 12px;
+        font-family: chillax;
+        font-weight: 400;
+    }
+    
+    .searchbar-main-wrapper{
+        flex-direction:column;
+  
+    }
+    
+    .searchbar{
+    
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        background:#EAEBE5;
+        color: #fff;
+        height: 250px;
+        width: 40vw;
+        border-radius: 42px;
+     
+        
+    }
+    .state,.district,.date{
+        
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter:none;
+    border:none;
+    width: 250px;
+    height: 2em;
+    margin: 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+  
+    
+    
+    }
+    .search-btn{
+
+    height:15%;
+    width: 50%;
+    margin-bottom: 5px;
+
+    }
+
+}
+
+@media (max-width: 890px) {
+    
+    .info-display{
+        position: relative;
+        background: #1A1A1A;
+        height: 100%;
+        width: 90%;
+        border-radius: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: xx-large;
+    }
+    .info-display-text{
+    
+        max-width: 90%;
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    .totalCases,.recoveredCases{
+        height: 20%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items: center;
+       margin-top: 5%;
+        
+    }
+    .totalCasesText,.recoveredText{
+        margin-top: 0;
+        font-size: 15px;
+        font-family: chillax;
+    }
+    
+
+    .state,.district,.date{
+        
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter:none;
+    border:none;
+    width: 250px;
+    height: 2em;
+    margin: 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+  
+    
+    
+    }
+    .search-btn{
+
+    height:15%;
+    width: 50%;
+    margin-bottom: 5px;
+
+    }
+
+}
+@media (max-width: 730px) {
+
+    .searchbar-main-wrapper{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 30%;
+        width: 100%;
+        bottom:10%;
+    }
+    
+    .searchbar{
+        position: relative;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        background:#EAEBE5;
+        color: #fff;
+        height: 250px;
+        width: 70vw;
+        border-radius: 42px;
+     overflow: hidden;
+        
+    }
+
+    .vaccination-center-name{
+        flex: 2;
+        padding-left: 10px;
+    }
+
+}
+
+@media (max-width: 550px){
+    .vaccination-center-name{
+        flex: 2;
+        padding-left: 15px;
+        font-size:medium;
+    }
+    .vaccination-center-slot p{
+    display: none;
+    }
+    .vaccination-center-book{
+    flex: 1;
+    }
+    .vaccination-center-slot{
+        display: none;
+    }
+
+    .vaccination-center-slot-number{
+        display: none;
+    }
+
 }
