@@ -9,14 +9,12 @@ import axios from 'axios';
 import {UserContext} from '../context/context';
 // import REACT_APP_MAPBOX from 'client/src/.env'
 // eslint-disable-next-line import/no-webpack-loader-syntax
-import mapboxgl from "mapbox-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
-import "./mapDisplay.css";
-
-// The following is required to stop "npm build" from transpiling mapbox code.
-// notice the exclamation point in the import.
 // @ts-ignore 
-// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+import mapboxgl from "!mapbox-gl";
+import ReactMapGL from "react-map-gl";
+import mapboxgl from "mapbox-gl"; // This is a dependency of react-map-gl even if you didn't explicitly install it
+
+// eslint-disable-next-line import/no-webpack-loader-syntax
 mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 const Token = 'pk.eyJ1IjoicGl5dXNoamhhIiwiYSI6ImNsZzl4MHZ3dDFidGkzZm85Nmdxa3B4cDAifQ.Jm2PEzVgGjD78Cl2-stBfA';
  
