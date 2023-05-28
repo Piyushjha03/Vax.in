@@ -1,8 +1,8 @@
 import React from 'react';
 import './camp.css'
-import 'mapbox-gl/dist/mapbox-gl.css'
+import '!mapbox-gl/dist/mapbox-gl.css'
 import { useState, useEffect } from 'react'
-import Map,{Marker} from 'react-map-gl';
+import Map,{Marker} from '!react-map-gl';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import axios from 'axios';
