@@ -9,8 +9,7 @@ import axios from 'axios';
 import {UserContext} from '../context/context';
 // import REACT_APP_MAPBOX from 'client/src/.env'
 import 'mapbox-gl/dist/mapbox-gl.css';
-import ReactMapGL, { FlyToInterpolator, NavigationControl } from 'react-map-gl';
-import mapboxgl from 'mapbox-gl';
+import mapboxgl from '!mapbox-gl';
 
 
 const Token = 'pk.eyJ1IjoicGl5dXNoamhhIiwiYSI6ImNsZzl4MHZ3dDFidGkzZm85Nmdxa3B4cDAifQ.Jm2PEzVgGjD78Cl2-stBfA';
