@@ -13,7 +13,7 @@ import {UserContext} from '../context/context';
 import mapboxgl from "!mapbox-gl";
 import mapboxgl from 'mapbox-gl/dist/mapbox-gl';
 import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
-mapboxgl.workerClass = MapboxWorker;
+mapboxgl.workerClass = MapboxWorker.default;
 const Token = 'pk.eyJ1IjoicGl5dXNoamhhIiwiYSI6ImNsZzl4MHZ3dDFidGkzZm85Nmdxa3B4cDAifQ.Jm2PEzVgGjD78Cl2-stBfA';
  
 export const Camp=()=>{
@@ -132,6 +132,7 @@ export const Camp=()=>{
             <div className="camp-right-wrapper">
                 <div className="camp-right">
                 <Map
+                
                 mapboxAccessToken={Token}
                     initialViewState={{
                         latitude: getresponse.latitude,
