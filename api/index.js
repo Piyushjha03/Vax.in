@@ -16,10 +16,12 @@ const db=mysql.createConnection({
     multipleStatements: true
 })
 
+db.connect();
+
 app.post('/login',(req,res)=>{
     const userId=req.body.userId;
     const password=req.body.password;
-    const q="SELECT * FROM USER WHERE aadhar_number=? AND password=?"
+    const q="SELECT * FROM user WHERE aadhar_number=? AND password=?"
 
     db.query(q,
     [userId,password],
@@ -51,7 +53,7 @@ const aadhar_number=req.body.aadhar_number;
 const gender=req.body.gender;
 const password=req.body.password;
 
-    const q="INSERT INTO USER(firstName,lastName,phnumber,dob,vaccination_status,age,address,aadhar_number,gender,password) VALUES(?,?,?,?,?,?,?,?,?,?)"
+    const q="INSERT INTO user(firstName,lastName,phnumber,dob,vaccination_status,age,address,aadhar_number,gender,password) VALUES(?,?,?,?,?,?,?,?,?,?)"
 
     db.query(q,
     [firstName,lastName,phnumber,dob,vaccination_status,age,address,aadhar_number,gender,password],
@@ -97,7 +99,7 @@ app.post('/camp',(req,res)=>{
         }
         else{
             res.send(result);
-            const q2="UPDATE CENTER SET number_of_slots=number_of_slots-1 WHERE centre_id=?"
+            const q2="UPDATE center SET number_of_slots=number_of_slots-1 WHERE centre_id=?"
     db.query(q2,
         c_id,
         )
@@ -113,7 +115,7 @@ app.post('/camp',(req,res)=>{
 
 app.post('/account',(req,res)=>{
     const uh_id=parseInt(req.body.uh_id);
-    const q="SELECT * FROM SLOT WHERE UH_ID=?"
+    const q="SELECT * FROM slot WHERE uh_id=?"
     
     db.query(q,
     [uh_id],
@@ -155,7 +157,7 @@ const aadhar_number=req.body.aadhar_number;
 const gender=req.body.gender;
 const password=req.body.password;
 
-    const q="UPDATE USER SET firstName=?,lastName=?,phnumber=?,dob=?,vaccination_status=?,age=?,address=?,aadhar_number=?,gender=?,password=? WHERE aadhar_number =?"
+    const q="UPDATE user SET firstName=?,lastName=?,phnumber=?,dob=?,vaccination_status=?,age=?,address=?,aadhar_number=?,gender=?,password=? WHERE aadhar_number =?"
 
     db.query(q,
     [firstName,lastName,phnumber,dob,vaccination_status,age,address,aadhar_number,gender,password,aadhar_number],
