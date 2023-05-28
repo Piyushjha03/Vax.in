@@ -13,7 +13,7 @@
     "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-gl": "^0.0.0",
-    "react-map-gl": "^5.3.21",
+    "react-map-gl": "^7.0.25",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
     "react-select": "^5.7.2",
