@@ -3,9 +3,11 @@ import React, { useState } from "react"
 import axios from "axios";
 import { DatePicker } from '@y0c/react-datepicker';
 import '@y0c/react-datepicker/assets/styles/calendar.scss';
+import { useLocation, useNavigate } from 'react-router-dom';
+
 export const Register=(props)=>{
 
-
+    const navigation=useNavigate()
     const[userDetails,setUserDetails]=useState({
         firstName:"",
         lastName:"",
@@ -28,7 +30,11 @@ export const Register=(props)=>{
 const handleClick=async(e)=>{
     e.preventDefault();
     try {
-        await axios.post("https://vaxin-api.vercel.app/register",userDetails);
+        await axios.post("https://vaxin-api.vercel.app/register",userDetails).then(
+            ()=>{
+                navigation('/login')
+            }
+            );
     } catch (error) {
         console.log(error);
     }
