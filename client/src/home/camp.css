@@ -278,3 +278,265 @@ background: #000;
 
     }
 }
+
+@media (max-width : 500px){
+    .camp-page-wrapper{
+        background: #000;
+            height:120vh;
+            width: 100vw;
+            display:flex; 
+            flex-direction: column;
+            font-family: chillax;
+            font-weight: 600;
+            overflow: hidden;
+            
+        } 
+        .camp-left-section{
+     margin: 0;
+            height: 60%;
+            width: 100%;
+           
+        }
+        
+        .camp-details{
+            background: #1B1B1F;
+            height: 50%;
+            width: 100%;
+            margin-top: 30px;
+            border-radius: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .camp-name{
+            max-width: 90%;
+            font-size: 2rem;
+            line-height:0;
+            padding: 5%;
+            line-height: 60px;
+            background: -webkit-linear-gradient(rgb(77,164,255), #B275F7);
+            background-clip:border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .camp-address{
+            max-width: 90%;
+            font-size:1rem;
+            letter-spacing: 2px;
+            line-height: 30px;
+            padding:5%;
+            background: -webkit-linear-gradient(rgb(77,164,255), #B275F7);
+            background-clip:border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .left-lower{
+            height:50%;
+            width: 100%;
+        }
+        
+        
+        .camp-booking-options{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        
+        }
+        
+        .book-slot-bttn{
+            transition-duration: 1s;
+            position: absolute;
+            bottom: 20px;
+            right: 43%;
+            height:10%;
+            width: 20%;
+            padding: 10px;
+            border-radius: 48px; 
+            overflow: hidden;
+            background:rgb(234, 157, 182); 
+            color: #000;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .book-slot-bttn:hover{
+            transition-duration: 1s;
+            transform: scale(1.2);
+            
+        }
+        
+        .vaccine-type,.slot-timing{
+            position: relative;
+            height: 85%;
+            width: 40%;
+            margin-right: 0;
+             border-radius: 48px; 
+            overflow: hidden;
+            transition-duration: 1s;
+            background:#A4A1FE;   
+        
+        }
+        .vaccine-type-text,.slot-timing-text{
+            
+            position: absolute;
+            left: 6%;
+            padding: 40px 10px 0 30px;
+            color: #000;
+            font-size: 1.6rem;
+            z-index: 10;
+            transition-duration: 1s;
+        }
+        
+        .vaccine-type:hover .vaccine-type-text,.slot-timing:hover .slot-timing-text{
+            color:#8383e7;
+            transition-duration: 1s;
+        }
+        .vaccine-type .vaccine-type-animate,.slot-timing .slot-timing-animate{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background:#f8f8f6;
+            transform: translateY(100%);
+            transition-duration: 1s;
+        }
+        .vaccine-type:hover .vaccine-type-animate,.slot-timing:hover .slot-timing-animate{
+            z-index: 1;
+            transform: translateY(0);
+            transition-duration: 1s;
+        } 
+        
+        .selected-vaccine-type,.selected-slot{
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            padding: 0 20px ;
+            height: 20%;
+            background: #191919;
+            border-radius: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #A3A1FE;
+            font-size: 1rem;
+        }
+        
+        .slot-timing{
+            height: 85%;
+            width: 40%;
+            margin-left: 32px;
+            border-radius: 48px;
+            background:#A4A1FE;
+        }
+        .slot-timing-text{
+            padding: 40px 10px 0 30px;
+            font-size: 1.6rem;
+        }
+        
+        
+        .camp-right-lower-right-section{
+            height: 100%;
+            flex:1;
+        } 
+        
+        
+        .vaccine-type-dropdown{
+            position: absolute;
+            bottom: 0;
+            background:#fff;
+            height: 50%;
+            width: 100%;
+            z-index: 99;
+            animation: fadeinup 1s;
+            display: flex;
+        }
+        .covaxin,.covishield{
+            flex:1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .covaxin-container,.covishield-container{
+            height: 90%;
+            width: 90%;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .covaxin-text,.covishield-text{
+            font-size: 0.8rem;
+        }
+        .covaxin-disc,.covaxin-disc{
+            width: 80%;
+            font-size: 0.6em;
+        }
+        .covaxin:hover .covaxin-container,.covishield:hover .covishield-container{
+            cursor: pointer;
+            background: #A4A1FE;
+            color: #000;
+        }
+        
+        .covishield{
+            flex:1;
+            height: 100%;
+            border-left: 1px solid;
+            border-color:#E5E5E5;
+        }
+        
+        .slot-timing-dropdown{
+            position: absolute;
+            bottom: 0;
+            background:#fff;
+            height: 50%;
+            width: 100%;
+            z-index: 99;
+            animation: fadeinup 1s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .morning-slot,.noon-slot,.evening-slot{
+            width: 100%;
+            flex:1;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .morning-slot-container,.noon-slot-container,.evening-slot-container{
+            width: 90%;
+            height: 80%;
+            border-radius: 24px;
+            border: 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .morning-slot:hover .morning-slot-container,.noon-slot:hover .noon-slot-container,.evening-slot:hover .evening-slot-container{
+            cursor: pointer;
+            background: #A4A1FE;
+            color: #000;
+        }
+        .camp-right-wrapper{
+         padding: 10%;
+            height: 40%;
+            width: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;align-items: center;
+        }
+        .camp-right{
+            height: 100%;
+            width: 100%;
+            background: #1B1B1F;
+            border-radius: 56px;
+            overflow: hidden;
+           
+        }
+}
